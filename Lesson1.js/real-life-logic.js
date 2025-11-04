@@ -1,0 +1,14 @@
+let tamil=95;
+let english=90;
+let maths=80;
+let TotalMarks=tamil+english+maths;
+let average=TotalMarks/3;
+console.log(TotalMarks);
+console.log(average);
+let salary=30000;
+let expenses=12000;
+let savings=salary-expenses;
+console.log(savings);
+let celcius=90;
+let fahrenheit = (celcius * 9/5) + 32;
+console.log(`${celcius}°C is equal to ${fahrenheit}°F`);
