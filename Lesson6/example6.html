@@ -54,6 +54,42 @@
         console.log(true && false);
 
         console.log(0.2>=0&&0.2<1/3);
+
+        console.log(true||false); 
+        console.log(!true);
+
+        if(5){
+            console.log('truthy');
+        }
+        /*if(0){
+            console.log('truthy');
+        }
+        if(cartQuantity){
+            console.log('cart has products');
+        }*/
+
+        console.log(!0);
+        console.log('text'/5);
+        let variable1=undefined;
+        console.log(variable1);
+
+         const result2=true?'truthy':'falsy';
+         console.log(result2);
+         const result3=0?'truthy':'falsy';
+         console.log(result3);
+
+
+         false&&console.log('hello');
+         const message=false&&'hello';
+         console.log(message);
+         const message1=5 &&'hello';
+         console.log(message1);
+
+         const currency='EUR'||'USD';
+         console.log(currency);
+
+         const currency1=undefined||'USD';
+         console.log(currency1);
      </script>
 </body>
 </html> 
