@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Boolean and If statements</title>
+</head>
+<body>
+    <h1>Boolean and If statements</h1>
+     <script>
+        let hour=13.04;
+        if(hour>=6 && hour<12){
+            console.log('Good Morning');
+        }
+        else if(hour>=13 && hour<17){
+            console.log('Good Afternoon');
+        }else{
+            console.log('good night');
+        }
+        let categories=5;
+        if(categories>=3 && categories<5){
+            console.log('flowers');
+        }
+        else if(categories>=1 && hour<3){
+            console.log('trees');
+        }else{
+            console.log('basket');
+        }
+        
+        let hour1=13.04;
+        let name="SaranyaAnantharaj"
+        if(hour1>=6 && hour1<12){
+            console.log(`Good Morning ${name}`);
+        }
+        else if(hour1>=13 && hour1<17){
+            console.log(`Good Afternoon  ${name}`);
+        }else{
+            console.log(`good night  ${name}`);
+        }
+        
+        let age=35;
+        if(age>=65 || age<=6){
+            console.log('discount');
+        }else{
+            console.log('no discount');
+        }
+         
+        let username='';
+        console.log(username||'guest');
+
+        const isHoliday=false;
+        let age1=6;
+        if((age1>=65 || age1<=6)&& !isHoliday){
+           console.log('discount');
+        }else{
+            console.log('no discount');
+        }
+
+         const isHoliday1=true;
+        let age2=6;
+        if((age2>=65 || age2<=6)&& !isHoliday1){
+           console.log('discount');
+        }else{
+            console.log('no discount');
+        }
+    </script>
+</body>
