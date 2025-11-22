@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>rock paper scissor</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <button onclick="
+    playGame(playerMove); 
+    ">Rock</button>
+
+
+    <button onclick="
+    playGame(playerMove); 
+    ">Paper</button>
+
+
+    <button onclick="playGame(playerMove);
+    ">Scissors</button><br><br>
+
+
+    <p><a href="https://supersimple.dev/projects/rock-paper-scissors/" >Click here</a>to see the final version of the project</p>
+     <script>
+        function playGame(playerMove){
+        computerMove = pickComputerMove(); 
+
+        result='';
+        if(playerMove==='scissors'){
+            if(computerMove==='rock'){
+            result='you lose';
+            }else if(computerMove==='paper'){
+                result='you win';
+            }else if(computerMove==='scissors'){
+                result='Tie';
+            }
+        }else if(playerMove==='paper'){
+            if(computerMove==='rock'){
+                result='you win';
+            }else if(computerMove==='paper'){
+                result='Tie';
+            }else if(computerMove==='scissors'){
+                result='you lose';
+            }
+        }else if(playerMove==='Rock'){
+           if(computerMove==='rock'){
+            result='Tie';
+            }else if(computerMove==='paper'){
+                result='you lose';
+            }else if(computerMove==='scissors'){
+                result='you win';
+            }
+        }
+        alert(`you picked ${playerMove}.computer picked ${computerMove}.${result}.`);
+        }
+        function pickComputerMove(){
+            const randomNumber=Math.random();
+            let computerMove=''; 
+            if(randomNumber >=0 && randomNumber<1/3){
+                computerMove='rock';
+            }else if(randomNumber >=1/3 && randomNumber <2/3){
+                computerMove='paper';
+            }else if(randomNumber >=2/3 && randomNumber <1){
+                computerMove='scissors';
+            }
+            return computerMove;
+ 
+        }
+     </script>
+</body>
+</html> 
