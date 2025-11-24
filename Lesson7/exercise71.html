@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions</title>
+    </head>
+    <body>
+        <h1>Function</h1>
+        <script>
+
+            function convertToFahrenheit(celsius){
+                const fahrenheit=(celsius*9/5)+32;
+                return (`${celsius}°C=${fahrenheit}°F`);
+                
+                }
+            convertToFahrenheit(25);       
+// -----------------------------------------yy------------------------------------------
+
+            function convertToCelsius(fahrenheit){
+                const Celsius=(fahrenheit-32)*5/9;
+                console.log(`${fahrenheit}°F=${Celsius}°C`);
+            }
+            // convertToCelsius(86);
+// --------------------------------------------------------------------------------------
+
+            function convertTemperature(degrees,unit){
+
+                if(unit === "f"){
+                   convertToFahrenheit(degrees)
+                }else{
+                    convertToCelsius(degrees)
+                }
+            }
+
+            // convertTemperature(25,'c');
+            // convertTemperature(86,'f');
+
+
+            function convertLength(length,from,to){
+                //const 1mile=1.6km;
+                if(from==='miles'&&to==='km'){
+                    const result=length*1.6;
+                    console.log(`${length}miles=${result}km`);
+                }else if(from==='km'&&to==='miles'){
+                    const result=length/1.6
+                    console.log(`${length}km=${result}miles`);
+                }else{
+                    console.log('Invalid');
+                }
+            }
+            convertLength(50,'miles','km');
+            convertLength(32,'km','miles');
+            convertLength(50,'km','km');
+
+
+            function convertLength(length,from,to,feet){
+                if(from==='miles'&&to==='km'){
+                 const result=length*1.6;
+                    console.log(`${length}miles=${result}km`);   
+                }else if(from==='miles'&& to==='ft'){
+                    const result=length*5280;
+                    console.log(`${length}miles=${result}feet`);
+                }else if(from==='km'&&to==='ft'){
+                    const result=length*3280.84;
+                    console.log(`${length}km=${result}feet`);
+                }else{
+                    console.log('Invalid unit');
+                }
+            }
+            convertLength(5,'miles','km');
+            convertLength(5,'miles','ft');
+            convertLength(50,'km','ft');
+
+              function convertLength(length,from,to,feet){
+                if(from==='miles'&&to==='km'){
+                 const result=length*1.6;
+                    console.log(`${length}miles=${result}km`);   
+                }else if(from==='miles'&& to==='ft'){
+                    const result=length*5280;
+                    console.log(`${length}miles=${result}feet`);
+                }else if(from==='km'&&to==='ft'){
+                    const result=length*3280.84;
+                    console.log(`${length}km=${result}feet`);
+                }else{
+                    console.log(`Invalid unit:${to}`);
+                }
+            }
+            convertLength(5,'miles','km');
+            convertLength(5,'miles','ft');
+            convertLength(50,'km','ft');
+            convertLength(50,'lbs','lbs');
+        </script>
+    </body>
+</html>

@@ -5,16 +5,16 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <button onclick="
-    playGame(playerMove); 
+    playGame('rock'); 
     ">Rock</button>
 
 
     <button onclick="
-    playGame(playerMove); 
+    playGame('paper'); 
     ">Paper</button>
 
 
-    <button onclick="playGame(playerMove);
+    <button onclick="playGame('scissors');
     ">Scissors</button><br><br>
 
 
@@ -32,6 +32,7 @@
             }else if(computerMove==='scissors'){
                 result='Tie';
             }
+
         }else if(playerMove==='paper'){
             if(computerMove==='rock'){
                 result='you win';
@@ -40,7 +41,8 @@
             }else if(computerMove==='scissors'){
                 result='you lose';
             }
-        }else if(playerMove==='Rock'){
+
+         }else if(playerMove==='rock'){
            if(computerMove==='rock'){
             result='Tie';
             }else if(computerMove==='paper'){
